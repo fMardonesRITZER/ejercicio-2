@@ -1,22 +1,26 @@
 * {
-    margin: 0;
-    padding: 0;
+    padding: 1rem;
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
 }
 
-
-/* header {
-    background-color: rgb(118, 118, 126);
-} */
 .container {
-    position: relative;
-    margin: 0px;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    margin: 1rem;
+   display: flex;
+}
+
+.contenido_hielo img {
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.contenido_fuego img {
+    width: 50%;
+    display: flex;
+}
+.contenido_aire img {
+    width: 50%;
+    display: flex;
 }
 
 h1 {
@@ -24,15 +28,6 @@ h1 {
     font-family: 'Roboto Mono', monospace;
     text-shadow: 5px  5px 5px green;
     }
-
-
-/* .contenido_verde {
-    background-color: rgb(21, 180, 92)
-}
-
-.video_plantas {
-    background-color: blue;
-} */
 
 body {
     background-color: green;
