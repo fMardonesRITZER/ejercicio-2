@@ -7,3 +7,29 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.formulario{
+    padding: 10rem;
+    margin: 2rem;
+}
+
+.formulario input, .formulario textarea, .formulario select {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px 5px;
+}
+
+.boton{
+    padding: 0.5;
+    width: 20%;
+    height: 30px;
+    border-color: greenyellow;
+    border-radius: 5px;
+    border-bottom: 1px;
+}
+
+button:hover{
+    color: white;
+    background-color: red;
+}
