@@ -12,31 +12,26 @@
     <title>PLANTVSUNDEAD</title>
 </head>
 <body>
-    <header>
-        <h1>PLANTS VS UNDEAD</h1>
-        <div class="container">
-            <img src="../img/images.jpg"/>
-        </div>
-    </header>
-    <div class="contacto">
-        <button><a href="../index.html">home</button>
+  <header>
+    <h1>PLANTS VS UNDEAD</h1>
+    <div class="container">
+        <img src="../img/images.jpg" alt="imagen de plantsvsundead"/>
     </div>
-    <form action="/my-handling-form-page" method="post">
-      <ul>
-         <li>
-           <label for="name">Nombre:</label>
-           <input type="text" id="name" name="user_name">
-         </li>
-         <li>
-           <label for="mail">Correo electrónico:</label>
-           <input type="email" id="mail" name="user_mail">
-         </li>
-         <li>
-           <label for="msg">Mensaje:</label>
-           <textarea id="msg" name="user_message"></textarea>
-         </li>
-      </ul>
-    </form>
-       <input type="submit">
+    <nav class="menu">
+        <a href="#">Contacto</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Listas</a>
+    </nav>
+  </header>
+  <form action="https://formspree.io/f/xpznqozl" method="post">
+  <label>
+    <input type="email" name="email" placeholder="Ingrese email">
+  </label>
+  <label>
+    <textarea name="message" placeholder="ingrese mensaje"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Enviar</button>
+</form>
 </body>
 </html>
