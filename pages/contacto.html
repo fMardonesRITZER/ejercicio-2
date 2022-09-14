@@ -23,13 +23,21 @@
         <a href="#">Listas</a>
     </nav>
   </header>
+
+
+    <div class="titulo_h2">
+      <h2>FORMULARIO</h2>
+    </div>
   <form action="https://formspree.io/f/xpznqozl" method="post" class="formulario">
-  <label>
+    <label for="nombre">NOMBRE</label>
+    <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre">
+  <label for="email">EMAIL</label>
     <input type="email" name="email" placeholder="Ingrese email">
-  </label>
-  <label>
+    <label for="password">CONTRASEÑA</label>
+      <input type="password" name="clave" id="clave" placeholder="ingresa tu contraseña">
+  <label for="message">MENSAJE</label>
     <textarea name="message" placeholder="ingrese mensaje"></textarea>
-  </label>
+  
   <!-- your other form fields go here -->
   <button type="submit" class="boton">Enviar</button>
 </form>
