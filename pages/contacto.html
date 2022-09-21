@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../style/contacto.css">
     <title>PLANTVSUNDEAD</title>
 </head>
 <body>
   <header>
-    <h1>PLANTS VS UNDEAD</h1>
     <div class="container">
-        <img src="../img/images.jpg" alt="imagen de plantsvsundead"/>
+      <h1>PLANTS VS UNDEAD</h1>
     </div>
     <nav class="menu">
         <a href="#">Contacto</a>
@@ -23,23 +23,41 @@
         <a href="#">Listas</a>
     </nav>
   </header>
-
-
-    <div class="titulo_h2">
-      <h2>FORMULARIO</h2>
+  <form class="row gx-3 gy-2">
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeInputName">Name</label>
+      <input type="text" class="form-control" id="specificSizeInputName" placeholder="Name">
     </div>
-  <form action="https://formspree.io/f/xpznqozl" method="post" class="formulario">
-    <label for="nombre">NOMBRE</label>
-    <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre">
-  <label for="email">EMAIL</label>
-    <input type="email" name="email" placeholder="Ingrese email">
-    <label for="password">CONTRASEÑA</label>
-      <input type="password" name="clave" id="clave" placeholder="ingresa tu contraseña">
-  <label for="message">MENSAJE</label>
-    <textarea name="message" placeholder="ingrese mensaje"></textarea>
-  
-  <!-- your other form fields go here -->
-  <button type="submit" class="boton">Enviar</button>
-</form>
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-text">@</div>
+        <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Username">
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+      <select class="form-select" id="specificSizeSelect">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="col-auto">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+        <label class="form-check-label" for="autoSizingCheck2">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </div>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
